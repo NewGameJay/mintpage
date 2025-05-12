@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export default function Home() {
   return (
     <>
@@ -6,7 +8,7 @@ export default function Home() {
       <header className="nav-header">
         <div className="nav-container">
           <div className="nav-logo">
-            <img src="/DarkTable_LOGO-KeyWhite.png" alt="Dark Table CCG" />
+            <Image src="/DarkTable_LOGO-KeyWhite.png" alt="Dark Table CCG" width={150} height={50} />
           </div>
           <div className="nav-spacer"></div>
           <button className="nav-button">Connect Wallet</button>
@@ -87,7 +89,7 @@ export default function Home() {
         <div className="game-content">
           <h2 className="section-title">Dark Table CCG</h2>
           <p className="section-text">
-            Welcome to the world's first Cross-Collectible (C2) Card Game: a free-to-play, 
+            Welcome to the world&apos;s first Cross-Collectible (C2) Card Game: a free-to-play, 
             4-player strategic experience with a fully onchain, cross-platform economy and 
             1000s of items. Set in a grim Lovecraftian world, players form temporary 
             alliances and bluff their way to victory in a dark battle for survival.
@@ -98,14 +100,14 @@ export default function Home() {
           </p>
         </div>
         <div className="game-media">
-          <img src="/gameplaygif.gif" alt="Dark Table CCG Gameplay" />
+          <Image src="/gameplaygif.gif" alt="Dark Table CCG Gameplay" width={400} height={300} />
         </div>
       </section>
 
       {/* Holder Perks Section */}
       <section className="perks-section">
         <div className="perks-media">
-          <img src="/DarkTable_LOGO-KeyWhite.png" alt="Dark Table CCG Logo" />
+          <Image src="/DarkTable_LOGO-KeyWhite.png" alt="Dark Table CCG Logo" width={400} height={200} />
         </div>
         <div className="perks-content">
           <h2 className="section-title">Holder Perks</h2>
